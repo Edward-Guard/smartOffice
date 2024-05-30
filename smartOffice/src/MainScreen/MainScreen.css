@@ -1,0 +1,9 @@
+.MainScreen {
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+  width: 900px;
+}

@@ -1,0 +1,355 @@
+/* stylelint-disable indentation */
+.detailsService {
+    width: 620px;
+    height: 400px;
+    background-color: darkgray;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    outline: black solid 1px;
+}
+
+.newServiceDiv {
+    background-color: darkgray;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    top: 170px;
+    outline: white solid 2px;
+}
+
+.serviceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.closeLine {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeDetails {
+    vertical-align: middle;
+    height: 20px;
+    width: 20PX;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.closeDetails:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.infoGrid{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    justify-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.labelDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 25px;
+    outline: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.nameDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  grey;
+    padding-inline: 5PX;
+    color: white;
+    height: 30px;
+}
+
+.nameTxDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  grey;
+    padding-inline: 5PX;
+    color: white;
+    height: 30px;
+    width: 160px;
+}
+
+.infoDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  white;
+    height: 30px;
+    width: 300px;
+}
+
+.infoTxDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  white;
+    height: 30px;
+    width: 100px;
+}
+
+.productsList {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    overflow-y: auto;
+    max-height: 160px;
+}
+
+.titleList {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.titleListItem{
+    margin-top: 2px;
+    outline: 1px solid black;
+    background-color: grey;
+    padding: 5px;
+    padding-inline: 15px;
+    border-radius: 15px;
+}
+
+.productItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    margin-top: 10px;
+}
+
+.lineInput {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 1px solid black;
+}
+
+.lineInput input, select{
+    text-align: center;
+    outline: 0.5px solid black;
+    height: 100%;
+}
+
+.clienteNS input {
+    width: 50%;
+
+}
+
+.veiculoNS input {
+    width: 130px;
+}
+
+.serviceNS input {
+    width: 70%;
+}
+
+.serviceNS select {
+    width: 30%;
+}
+
+.pricesNS{
+    background-color: white;
+    text-align: center;
+}
+.pricesNS input {
+    width: 100px;
+}
+
+.pricesNS div {
+    width: 180px;
+}
+
+.btnNewService {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnNewService button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.confirm {
+    background-color: white;
+    outline: 1px solid green;
+    color: green;
+}
+
+.confirm:hover {
+    background-color: green;
+    outline: 1px solid green;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: white;
+    outline: 1px solid red;
+    color: red;
+}
+
+.cancel:hover {
+    background-color: red;
+    outline: 1px solid red;
+    color: white;
+    cursor: pointer;
+}
+
+.print {
+    background-color: white;
+    outline: 1px solid grey;
+    color: grey;
+}
+
+.print:hover {
+    background-color: grey;
+    outline: 1px solid grey;
+    color: white;
+    cursor: pointer;
+}
+
+.descNS {
+    margin-top: 10px;
+    text-align: center;
+    width: 360px;
+}
+
+.titleAddProd{
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: black;
+    margin-bottom: 0px;
+    outline: 1px solid black;
+    background-color: white;
+}
+
+.addProd{
+    border-radius: 0px 10px 10px 10px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    height: 25px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.selectProd {
+    border: none;
+    height: 25px;
+    width: 260px;
+}
+
+.quantProd {
+    height: 25px;
+    width: 30px;
+}
+
+.priceProd{
+    padding-left: 2px;
+    height: 100%;
+    justify-content: center;
+    outline: 1px solid black;
+}
+
+.addProd button {
+    height: 25px;
+    width: 30px;
+    background-color: white;
+    outline: 1px solid black;
+    color: green;
+}
+
+.addProd button:hover {
+    background-color: green;
+    color: white;
+}
+
+.listProds{
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    height: 25px;
+    margin-bottom: 3px;
+    height: 25px;
+    overflow: hidden;
+    width: 400px;
+    justify-items: center;
+    grid-template-columns: 25px 260px 80px 30px;
+}
+
+.listProds div {
+    height: 25px;
+}
+
+.listProds button {
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: white;
+    outline: 1px solid black;
+    color: red;
+}
+
+.listProds button:hover {
+    height: 25px;
+    width: 30px;
+    background-color: red;
+    outline: 1px solid black;
+    color: white;
+}

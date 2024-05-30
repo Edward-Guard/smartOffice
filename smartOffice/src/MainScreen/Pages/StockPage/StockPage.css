@@ -1,0 +1,151 @@
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  width: 900px;
+}
+
+.newProductBar {
+  align-items: center;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.inputNP {
+  background-color: white;
+  border: 0.5px dotted cyan;
+  border-style: dotted;
+  display: flex;
+  height: 40px;
+  outline-color: cyan;
+  text-align: center;
+  width: 100px;
+}
+
+.idProd {
+  width: 50px;
+}
+
+.nameProd {
+  width: 200px;
+}
+
+.unProd {
+  width: 50px;
+}
+
+.priceProd {
+  width: 80px;
+}
+
+.btnList {
+  width: 80px;
+}
+
+.btnAprove {
+  align-items: center;
+  background-color: rgb(0, 200, 200);
+  color: white;
+  display: flex;
+  font-size: 25px;
+  height: 40px;
+  padding-inline: 8px;
+  width: 40px;
+}
+
+.btnCancel {
+  align-items: center;
+  background-color: rgb(0, 200, 200);
+  color: white;
+  display: flex;
+  font-size: 25px;
+  height: 40px;
+  padding-inline: 8px;
+  width: 42px;
+}
+
+.btnAprove:hover {
+  background-color: green;
+}
+
+.btnCancel:hover {
+  background-color: red;
+}
+
+.tableStock {
+  background-color: #00c8c8;
+  border-radius: 15px;
+  border-spacing: 0;
+  height: auto;
+  margin-top: 20px;
+  outline: 1px solid cyan;
+  padding: 10px;
+  width: 700px;
+}
+
+.titleTable {
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  height: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.rowTable {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.rowTable:hover {
+  background-color: rgb(0, 200, 200);
+  outline: 1px solid cyan;
+}
+
+.chBtns {
+  width: 50px;
+}
+
+.altProduct, .rmProduct {
+  background-color: rgb(0, 200, 200);
+  color: white;
+  font-size: 20px;
+  height: 28px;
+  padding-top: 2px;
+  width: 25px;
+}
+
+.altProduct:hover {
+  background-color: goldenrod;
+}
+
+.rmProduct:hover {
+  background-color: red;
+}
+
+.maxScreen {
+  height: 300px;
+  overflow: auto;
+}
+
+.outStock {
+  background-color: white;
+  border-radius: 10px;
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
+  outline: 1px solid red;
+  padding: 8px;
+  text-align: center;
+}
+

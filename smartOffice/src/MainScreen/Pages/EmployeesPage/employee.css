@@ -1,0 +1,18 @@
+.resumeEmployee {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100px 80px 140px 60px;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+}
+
+.detailsEmployee {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 250px 200px 100px;
+  justify-content: center;
+  padding-inline: 10px;
+  width: 580px;
+}
+

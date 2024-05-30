@@ -1,0 +1,60 @@
+const stockDB = [
+  {
+    id: 1,
+    nome: 'Kit de Pedaleira',
+    tipo: 'NC 700',
+    marca: 'Genérico',
+    quantidade: 5,
+    valor: 650.00,
+  },
+  {
+    id: 2,
+    nome: 'Óleo de motor',
+    tipo: '20w50',
+    marca: 'YAMAHA',
+    quantidade: 10,
+    valor: 400.00,
+  },
+  {
+    id: 3,
+    nome: 'Óleo de motor',
+    tipo: '20w50',
+    marca: 'MOBIL',
+    quantidade: 10,
+    valor: 200.00,
+  },
+  {
+    id: 4,
+    nome: 'Kit de transmissão',
+    tipo: 'N/A',
+    marca: 'Genérico',
+    quantidade: 5,
+    valor: 300.00,
+  },
+  {
+    id: 5,
+    nome: 'Pisca Alerta',
+    tipo: 'Duplo LED',
+    marca: 'XRE TWISTER',
+    quantidade: 4,
+    valor: 50.90,
+  },
+  {
+    id: 6,
+    nome: 'Sensor de Freio',
+    tipo: 'N/A',
+    marca: 'Genérico',
+    quantidade: 4,
+    valor: 82.90,
+  },
+  {
+    id: 7,
+    nome: 'Suporte Protetor de placa',
+    tipo: 'Mercosul',
+    marca: 'ISJ',
+    quantidade: 2,
+    valor: 63.50,
+  },
+];
+
+export default stockDB;

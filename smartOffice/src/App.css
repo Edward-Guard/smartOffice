@@ -1,0 +1,40 @@
+.principalScreen {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.mainContent {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+
+.searchBar {
+  align-items: center;
+  display: flex;
+  height: 10%;
+  justify-content: center;
+  width: 100%;
+}
+
+.navChangePages {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.infoProductBar {
+  align-items: center;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 60px repeat(5, 120px) repeat(2, 30px);
+  height: 10%;
+  justify-content: center;
+  width: 100%;
+}
