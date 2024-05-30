@@ -1,19 +1,19 @@
 const employeesDB = [
   {
     id: 1,
-    cpf: '123.456.789-00',
-    nome: 'João',
+    cpf: '999.999.999-99',
+    nome: 'Jhefferson',
     funcao: 'Mecânico',
   },
   {
     id: 2,
-    cpf: '987.654.321-00',
-    nome: 'José',
+    cpf: '999.999.999-99',
+    nome: 'Luciano',
     funcao: 'Mecânico',
   },
   {
     id: 3,
-    cpf: '111.222.333-44',
+    cpf: '999.999.999-99',
     nome: 'Henrique',
     funcao: 'Mecânico',
   },
