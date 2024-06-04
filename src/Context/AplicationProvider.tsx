@@ -30,11 +30,11 @@ function AplicationProvider({ children }: ThemeProviderProps) {
   }, []);
 
   const setStock = async () => {
-    const { status, data } = await axios.get('http://localhost:3001/stock');
+    const { status, data } = await axios.get('https://smartoffice-backend-production.up.railway.app/stock');
     if (status === 200) { setListProducts(data); }
   };
   const setServices = async () => {
-    const { status, data } = await axios.get('http://localhost:3001/services');
+    const { status, data } = await axios.get('https://smartoffice-backend-production.up.railway.app/services');
     if (status === 200) { setListServices(data); }
   };
   const handleData = async (data: any, action: string, table: string) => {
