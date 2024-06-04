@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import AplicationContext from './AplicationContext';
@@ -19,8 +18,8 @@ function AplicationProvider({ children }: ThemeProviderProps) {
 
   useEffect(() => {
     async function inicio() {
-      const stock = await axios.get('https://smartoffice-backend-production.up.railway.app/stock');
-      const service = await axios.get('https://smartoffice-backend-production.up.railway.app/services');
+      const stock = await axios.get('http://localhost:3001/stock');
+      const service = await axios.get('http://localhost:3001/services');
 
       if (stock.status === 200) setListProducts(stock.data);
       if (service.status === 200) setListServices(service.data);
@@ -30,11 +29,11 @@ function AplicationProvider({ children }: ThemeProviderProps) {
   }, []);
 
   const setStock = async () => {
-    const { status, data } = await axios.get('https://smartoffice-backend-production.up.railway.app/stock');
+    const { status, data } = await axios.get('http://localhost:3001/stock');
     if (status === 200) { setListProducts(data); }
   };
   const setServices = async () => {
-    const { status, data } = await axios.get('https://smartoffice-backend-production.up.railway.app/services');
+    const { status, data } = await axios.get('http://localhost:3001/services');
     if (status === 200) { setListServices(data); }
   };
   const handleData = async (data: any, action: string, table: string) => {
