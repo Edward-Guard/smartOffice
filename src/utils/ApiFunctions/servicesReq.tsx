@@ -1,24 +1,21 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from 'axios';
 
-const url = 'smartoffice-backend-production.up.railway.app'
-
 export const getAllServices = async () => {
-  const response = await axios.get(`https://${url}/services`);
+  const response = await axios.get('https://localhost:3001/services');
   return response;
 };
 
 export const removeService = async (id: number) => {
-  const response = await axios.delete(`https://${url}/${id}`);
+  const response = await axios.delete(`https://localhost:3001/services/${id}`);
   return response;
 };
 
 export const addService = async (data: any) => {
-  const response = await axios.post(`https://${url}/services`, data);
+  const response = await axios.post('https://localhost:3001/services', data);
   return response;
 };
 
 export const updateService = async (data: any) => {
-  const response = await axios.put(`https://${url}/${data.id}`, data);
+  const response = await axios.put(`https://localhost:3001/services/${data.id}`, data);
   return response;
 };
