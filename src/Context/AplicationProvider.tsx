@@ -69,8 +69,9 @@ function AplicationProvider({ children }: ThemeProviderProps) {
       const newService = { ...data,
         cliente: { nome: nomeCliente, Id: idCliente },
         veiculo: { placa, modelo },
+        produto
       };
-      await addService(newService);
+       await addService(newService);
     }
     await delay();
     await setStock();

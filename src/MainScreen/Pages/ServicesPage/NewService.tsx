@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/no-autofocus */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext, useEffect, useState } from 'react';
 import moment from 'moment';
 import { useForm } from 'react-hook-form';
@@ -28,6 +28,8 @@ function NewService({ cancelUpdate }: TypeParams) {
   useEffect(() => {
     const handleAmount = () => {
       const { produto, txServico } = service;
+      console.log(service);
+      
       const total = amountBill({ listProducts: produto, serviceTax: Number(txServico) });
       setAmount(total);
     };
