@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import AplicationContext from './AplicationContext';
@@ -15,11 +16,12 @@ function AplicationProvider({ children }: ThemeProviderProps) {
   const [listProducts, setListProducts] = useState(stockDB);
   const [listServices, setListServices] = useState(servicesDB);
   const [listEmployees] = useState(employeesDB);
+  const url = 'https://smartoffice-backend-production.up.railway.app/';
 
   useEffect(() => {
     async function inicio() {
-      const stock = await axios.get('http://localhost:3001/stock');
-      const service = await axios.get('http://localhost:3001/services');
+      const stock = await axios.get(`${url}stock`);
+      const service = await axios.get(`${url}services`);
 
       if (stock.status === 200) setListProducts(stock.data);
       if (service.status === 200) setListServices(service.data);
@@ -28,14 +30,19 @@ function AplicationProvider({ children }: ThemeProviderProps) {
     inicio();
   }, []);
 
+  function delay(){
+    return new Promise(resolve => setTimeout(resolve, 1000));
+  }
+
   const setStock = async () => {
-    const { status, data } = await axios.get('http://localhost:3001/stock');
+    const { status, data } = await axios.get(`${url}stock`);
     if (status === 200) { setListProducts(data); }
   };
   const setServices = async () => {
-    const { status, data } = await axios.get('http://localhost:3001/services');
+    const { status, data } = await axios.get(`${url}services`);
     if (status === 200) { setListServices(data); }
   };
+
   const handleData = async (data: any, action: string, table: string) => {
     if (table === 'stock' && action === 'remove') {
       await removeProduct(data.id);
@@ -65,8 +72,9 @@ function AplicationProvider({ children }: ThemeProviderProps) {
       };
       await addService(newService);
     }
-    setStock();
-    setServices();
+    await delay();
+    await setStock();
+    await setServices();
   };
 
   return (

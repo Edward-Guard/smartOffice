@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext } from 'react';
 import { TypeServiceN } from '../../../utils/Types';
 import AplicationContext from '../../../Context/AplicationContext';
@@ -42,7 +43,6 @@ function DetailsService({ setDatailsService, service }: DetailsServiceProps) {
 
   const { nome, funcionario, data, garantia, cliente, veiculo,
     produto, txServico } = service;
-  console.log('service', service);
 
   return (
     <div className="detailsService">
